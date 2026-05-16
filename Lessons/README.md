@@ -1,5 +1,5 @@
 # Python Lessons
 
-1. [Beginner](Beginner)
-1. [Intermediate](Intermediate)
-1. [Advanced](Advanced)
+1. [Beginner](01-Beginner)
+1. [Intermediate](02-Intermediate)
+1. [Advanced](03-Advanced)
