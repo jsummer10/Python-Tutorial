@@ -1,0 +1,40 @@
+app_name: MyService
+environment: development
+version: "1.4.2"
+debug: true
+
+database:
+  host: localhost
+  port: 5432
+  name: myservice_dev
+  user: dev_user
+  password: secret
+  pool_size: 3
+
+cache:
+  host: localhost
+  port: 6379
+  ttl_seconds: 60
+
+logging:
+  level: debug
+  json_output: false
+  log_dir: /tmp/myservice/logs
+
+feature_flags:
+  enable_new_ui: true
+  enable_beta_api: false
+  max_upload_mb: 25
+  allowed_origins:
+    - "http://localhost:3000"
+    - "https://staging.example.com"
+
+services:
+  payment:
+    url: https://pay.example.com/api
+    timeout_seconds: 10.0
+    retries: 2
+    api_key: pk_test_abc123
+  email:
+    url: https://mail.example.com/v1
+    timeout_seconds: 5.0

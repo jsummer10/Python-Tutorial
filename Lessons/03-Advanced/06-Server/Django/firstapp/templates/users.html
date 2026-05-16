@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}
+  All users in my SQLite database
+{% endblock %}
+
+{% block content %}
+    <p><a href="/">HOME</a></p>
+    
+    <h1>User Data</h1>
+    
+    <ul>
+    {% for user in userdata %}
+    <li><a href="details/{{ user.id }}">{{ user.firstname }} {{ user.lastname }}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}

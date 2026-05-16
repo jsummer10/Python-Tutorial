@@ -1,0 +1,96 @@
+<html>
+<head>
+  <title>Flask Tutorial</title>
+</head>
+  <body>
+    <h1>This is the Index page</h1>
+    <div className="min-h-screen bg-gray-100 p-8 flex items-center justify-center">
+      <div className="w-full max-w-2xl bg-white rounded-3xl shadow-xl p-8 space-y-8">
+        <div>
+          <h1 className="text-4xl font-bold">Flask API Demo</h1>
+          <p className="text-gray-600 mt-2">
+            Example frontend for the sample Flask application.
+          </p>
+        </div>
+
+        <div className="grid gap-6">
+          <section className="border rounded-2xl p-6 space-y-4">
+            <div>
+              <h2 className="text-2xl font-semibold">Home Endpoint</h2>
+              <p className="text-gray-500 text-sm">
+                GET /
+              </p>
+            </div>
+
+            <div className="bg-gray-100 rounded-xl p-4 font-mono text-sm">
+              Hello from Flask!
+            </div>
+
+            <button className="px-4 py-2 rounded-xl bg-black text-white hover:opacity-90 transition">
+              Send Request
+            </button>
+          </section>
+
+          <section className="border rounded-2xl p-6 space-y-4">
+            <div>
+              <h2 className="text-2xl font-semibold">Greeting Endpoint</h2>
+              <p className="text-gray-500 text-sm">
+                GET /greet/&lt;name&gt;
+              </p>
+            </div>
+
+            <div className="flex gap-3">
+              <input
+                type="text"
+                placeholder="Enter a name"
+                className="flex-1 border rounded-xl px-4 py-2"
+                defaultValue="Jacob"
+              />
+
+              <button className="px-4 py-2 rounded-xl bg-black text-white hover:opacity-90 transition">
+                Greet
+              </button>
+            </div>
+
+            <div className="bg-gray-100 rounded-xl p-4 font-mono text-sm">
+              {`{"message": "Hello, Jacob!"}`}
+            </div>
+          </section>
+
+          <section className="border rounded-2xl p-6 space-y-4">
+            <div>
+              <h2 className="text-2xl font-semibold">Add Numbers</h2>
+              <p className="text-gray-500 text-sm">
+                POST /add
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3">
+              <input
+                type="number"
+                placeholder="First number"
+                className="border rounded-xl px-4 py-2"
+                defaultValue="5"
+              />
+
+              <input
+                type="number"
+                placeholder="Second number"
+                className="border rounded-xl px-4 py-2"
+                defaultValue="7"
+              />
+            </div>
+
+            <button className="px-4 py-2 rounded-xl bg-black text-white hover:opacity-90 transition w-full">
+              Calculate
+            </button>
+
+            <div className="bg-gray-100 rounded-xl p-4 font-mono text-sm overflow-x-auto">
+              {`{"a": 5, "b": 7, "sum": 12 }`}
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
