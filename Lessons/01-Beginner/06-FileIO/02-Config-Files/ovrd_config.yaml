@@ -1,0 +1,11 @@
+environment: staging
+debug: false
+
+database:
+  host: db.staging.internal
+  pool_size: 10
+  ssl: true
+
+logging:
+  level: info
+  json_output: true

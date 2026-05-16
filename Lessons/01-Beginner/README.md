@@ -8,5 +8,5 @@
 1. [Functions](04-Functions)
 1. [Modules](05-Modules)
 1. [File I/O](06-FileIO)
-1. [Code Documentation](07-Code-Documentation)
+1. [Code Documentation](07-Code-Docs)
 1. [Formatting](08-Formatting)
