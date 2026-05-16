@@ -29,3 +29,8 @@ Python is genuinely general-purpose — it thrives in an unusually wide range of
 Python's guiding principles are captured in a short document called *The Zen of Python*, accessible from within the language itself. Its core ideas include preferring simplicity over complexity, valuing readability, and making the right way to do something also the obvious way. This philosophy has shaped a language and community that prizes practicality, clarity, and collaboration.
 
 Whether you're automating a task, building a web service, or training a machine learning model, Python offers a straightforward path from idea to working code.
+
+## Lessons
+
+1. [Getting Started](01-getting-started.md)
+2. [Using Jupyter Notebooks](02-using-jupyter.md)

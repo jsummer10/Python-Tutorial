@@ -1,0 +1,57 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pytutorial"
+dynamic = ["version"]
+description = "A sample package for this Python tutorial"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["tutorial", "sample", "education"]
+authors = []
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    # Add your tutorial package's dependencies here, for example:
+    # "requests>=2.28.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/jsummer10/pytutorial"
+Issues = "https://github.com/jsummer10/pytutorial/issues"
+
+[tool.hatch.version]
+path = "src/pytutorial/__init__.py"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+
+[tool.pylint.main]
+# Analyse sections of code for similarities
+disable = [
+    "raw-checker-failed",
+    "bad-inline-option",
+    "locally-disabled",
+    "file-ignored",
+    "suppressed-message",
+    "useless-suppression",
+    "deprecated-pragma",
+    "use-symbolic-message-instead",
+]
+
+[tool.pylint.format]
+max-line-length = 120  # Matches Black/Ruff standard default
+
+[tool.pylint.reports]
+output-format = "colorized"
