@@ -8,12 +8,6 @@ This lesson compares the main approaches available in Python.
 
 1. [Comprehensive Concurrency](01_concurrency.ipynb)
 
-## Supporting Files
-
-- [threads.py](threads.py) - thread-based examples.
-- [multiproc.py](multiproc.py) - multiprocessing examples.
-- [async.py](async.py) - asynchronous programming examples.
-
 ## Topics
 
 - Threads, locks, and race conditions
