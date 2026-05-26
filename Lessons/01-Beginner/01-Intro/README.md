@@ -33,4 +33,11 @@ Whether you're automating a task, building a web service, or training a machine 
 ## Lessons
 
 1. [Getting Started](01-getting-started.md)
-2. [Using Jupyter Notebooks](02-using-jupyter.md)
+1. [Using Jupyter Notebooks](02-using-jupyter.md)
+
+## What You Will Learn
+
+- What Python is used for
+- How to install and run Python
+- How to work with scripts and interactive environments
+- How Jupyter notebooks fit into the tutorial workflow

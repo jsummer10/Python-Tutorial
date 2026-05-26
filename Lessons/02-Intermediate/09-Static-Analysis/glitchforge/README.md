@@ -7,8 +7,14 @@ branches, and a few runtime bugs.
 
 It is not intended for production use.
 
-Example:
+## Try It
 
 ```bash
 python -m glitchforge --count 3
 ```
+
+## Use With Tools
+
+Run linters, formatters, type checkers, security scanners, and tests against this
+package to see the kinds of issues each tool reports. The point is to inspect and
+discuss the findings, not to treat this as clean application code.
