@@ -23,12 +23,20 @@ dependencies = [
     # "requests>=2.28.0",
 ]
 
+[project.scripts]
+pytutorial = "pytutorial.cli:execute"
+
 [project.urls]
-Homepage = "https://github.com/jsummer10/pytutorial"
-Issues = "https://github.com/jsummer10/pytutorial/issues"
+Homepage = "https://github.com/jsummer10/Python-Tutorial"
+Issues = "https://github.com/jsummer10/Python-Tutorial/issues"
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0",
+]
 
 [tool.hatch.version]
-path = "src/pytutorial/__init__.py"
+path = "src/pytutorial/__version__.py"
 
 [tool.pytest.ini_options]
 minversion = "7.0"

@@ -1,4 +1,6 @@
+"""Run the sample package with ``python -m pytutorial``."""
 
-import main
+from .cli import execute
 
-main.execute()
+
+execute()
