@@ -182,7 +182,5 @@ class GradeBook:
         return {
             "student_count": len(self._students),
             "class_average": self.class_average(),
-            "passing_students": [
-                student.name for student in self.passing_students()
-            ],
+            "passing_students": [student.name for student in self.passing_students()],
         }

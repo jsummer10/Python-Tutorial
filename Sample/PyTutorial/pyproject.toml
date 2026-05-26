@@ -59,7 +59,7 @@ disable = [
 ]
 
 [tool.pylint.format]
-max-line-length = 120  # Matches Black/Ruff standard default
+max-line-length = 100  # Matches Black/Ruff standard default
 
 [tool.pylint.reports]
 output-format = "colorized"
